@@ -7,7 +7,7 @@ var map = new ol.Map({
         constrainResolution: false,
         maxZoom: 5,
         minZoom: 1,
-        extent: [-22.180356, 17.570351, 6.813929, 41.206093],
+        extent: [-21.069312, 18.480071, 6.267212, 40.764430],
         projection: new ol.proj.Projection({
             code: 'EPSG:4326',
             //extent: [-17.103643, 20.770896, -0.998397, 35.922442],
@@ -17,7 +17,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-22.180356, 17.570351, 6.813929, 41.206093], map.getSize());
+map.getView().fit([-21.069312, 18.480071, 6.267212, 40.764430], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {

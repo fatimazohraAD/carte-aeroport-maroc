@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:4326").setExtent([-22.180356, 17.570351, 6.813929, 41.206093]);
+//ol.proj.get("EPSG:4326").setExtent([-21.069312, 18.480071, 6.267212, 40.764430]);
 var wms_layers = [];
 
 var format_Regions_MAR_0 = new ol.format.GeoJSON();
@@ -59,7 +59,7 @@ lyr_Limites_MAR_1.set('fieldAliases', {'OBJECTID': 'OBJECTID', });
 lyr_Aearoports_MAR_2.set('fieldAliases', {'Nom_fr': 'Nom_fr', 'Nom_ar': 'Nom_ar', 'iata': 'iata', 'capacite': 'capacite', });
 lyr_Regions_MAR_0.set('fieldImages', {'OBJECTID': 'TextEdit', 'CODE_REGIO': 'TextEdit', 'Nom_Region': 'TextEdit', 'Population': 'TextEdit', 'Menages': 'TextEdit', 'Etrangers': 'TextEdit', 'Marocains': 'TextEdit', 'Non_ar': 'TextEdit', });
 lyr_Limites_MAR_1.set('fieldImages', {'OBJECTID': 'TextEdit', });
-lyr_Aearoports_MAR_2.set('fieldImages', {'Nom_fr': '', 'Nom_ar': '', 'iata': '', 'capacite': '', });
+lyr_Aearoports_MAR_2.set('fieldImages', {'Nom_fr': 'TextEdit', 'Nom_ar': 'TextEdit', 'iata': 'TextEdit', 'capacite': 'TextEdit', });
 lyr_Regions_MAR_0.set('fieldLabels', {'OBJECTID': 'no label', 'CODE_REGIO': 'no label', 'Nom_Region': 'inline label - always visible', 'Population': 'no label', 'Menages': 'no label', 'Etrangers': 'no label', 'Marocains': 'no label', 'Non_ar': 'no label', });
 lyr_Limites_MAR_1.set('fieldLabels', {'OBJECTID': 'no label', });
 lyr_Aearoports_MAR_2.set('fieldLabels', {'Nom_fr': 'inline label - always visible', 'Nom_ar': 'inline label - always visible', 'iata': 'no label', 'capacite': 'no label', });
