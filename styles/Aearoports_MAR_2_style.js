@@ -69,8 +69,28 @@ var style_Aearoports_MAR_2 = function(feature, resolution){
 		];
 	}
     var style = [ new ol.style.Style({
-        image: new ol.style.RegularShape({radius: 3.2 + size, points: 4,
-            angle: Math.PI/4, displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(255,255,255,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'})}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [290.0, 290.0],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.34906600000000004,
+                  src: "styles/transport_airport.svg"
+            }),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
+    }),new ol.style.Style({
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [290.0, 290.0],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.34906600000000004,
+                  src: "styles/transport_airport_1.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
